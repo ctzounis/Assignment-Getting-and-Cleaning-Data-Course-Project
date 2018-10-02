@@ -1,0 +1,250 @@
+a<-available.packages()
+getwd
+getwd()
+a<-available.packages()
+install.package(swirl)
+install.package(slidify)
+install.package("slidify")
+help(install)
+help()
+a<-available.packages()
+x<-1
+print(x)
+x
+msg<- "hello"
+print(msg)
+x<-1:20
+x
+1/Inf
+x<-1:3
+names(x)
+m<-matrix(1:4, nrow=2, ncol=3)
+m<-matrix(1:4, nrow=2, ncol=2)
+m
+y<-data.frame(a=1,b="a")
+dput(y)
+dput(y,file="y.R")
+new.y<-dget("y.R")
+new.y
+x<-c(1,3,5)
+x
+y<-c(3,2,10)
+y
+cbind(x,y)
+clear
+x <- list(2, "a", "b", TRUE)
+x[[2]]
+x <- 1:4
+y <- 2
+x+y
+x <- c(17, 14, 4, 5, 13, 12, 10)
+x[x > 10] <- 4
+x
+x <- c(17, 14, 4, 5, 13, 12, 10)
+x
+x[x == 4] > 10
+x <- c(17, 14, 4, 5, 13, 12, 10)
+x[x > 10] == 4
+install.packages("swirl")
+packageVersion("swirl")
+library(swirl)
+install_from_swirl("R Programming")
+swirl()
+bye()
+swirl()
+library(swirl)
+swirl()
+bye()
+x <- 1:10
+if(x > 5) {x <- 0}
+f <- function(x) {#
+        g <- function(y) {#
+                y + z#
+        }#
+        z <- 4#
+        x + g(x)#
+}
+z <- 10 f(3)
+z <- 10
+f(3)
+x <- 5#
+y <- if(x < 3) {#
+        NA#
+} else {#
+        10#
+}
+y
+mean_vector <- c()
+mean_vector
+dataframe = NULL
+dataframe
+?cor
+library(datasets)
+data(iris)
+?iris
+iris
+tapply(iris, flags$Sepal.Length, mean)
+sapply(iris$Sepal.Length, mean)
+tapply(iris$Sepal.Length, iris$virginica, mean)
+data<-iris(,102:150)
+data<-iris(102:150,)
+data<-iris[102:150,]
+data
+sapply(iris$Sepal.Length, mean)
+tapply(iris$Sepal.Length, iris$virginica, mean)
+sapply(iris, mean)
+rowMeans(iris[, 1:4])
+apply(iris, 1, mean)
+apply(iris[, 1:4], 2, mean)
+library(datasets)
+data(mtcars)
+?mtcars
+tapply(mtcars$mpg, mtcars$cyl, mean)
+tapply(mtcars$cyl, mtcars$mpg, mean)
+apply(mtcars, 2, mean)
+lapply(mtcars, mean)
+split(mtcars, mtcars$cyl)
+with(mtcars, tapply(mpg, cyl, mean))
+sapply(split(mtcars$mpg, mtcars$cyl), mean)
+sapply(split(mtcars$hp, mtcars$cyl), mean)
+209.21429-82.63636
+debug(ls)
+ls()
+library(datasets)
+data(iris)
+data<-iris[102:150,]
+data
+sapply(data, mean)
+library(datasets)
+data(mtcars)
+tapply(mtcars$mpg, mtcars$cyl, mean)
+apply(mtcars, 2, mean)
+lapply(mtcars, mean)
+mean(mtcars$mpg, mtcars$cyl)
+sapply(mtcars, cyl, mean)
+split(mtcars, mtcars$cyl)
+sapply(split(mtcars$mpg, mtcars$cyl), mean)
+tapply(mtcars$cyl, mtcars$mpg, mean)
+?inv()
+?inv
+library(matlib)
+c=rbind(c(1, -1/4), c(-1/4, 1))
+c
+solve(c)
+solve(c)%*%c
+makeVector <- function(x = numeric()) {#
+        m <- NULL#
+        set <- function(y) {#
+                x <<- y#
+                m <<- NULL#
+        }#
+        get <- function() x#
+        setmean <- function(mean) m <<- mean#
+        getmean <- function() m#
+        list(set = set, get = get,#
+             setmean = setmean,#
+             getmean = getmean)#
+}
+x = numeric()
+x
+makeVector(x)
+x = numeric(2)
+makeVector(x)
+set.seed(1)
+rpois(5, 2)
+?ppois
+?rpois
+set.seed(10)
+x <- rep(0:1, each = 5)
+e <- rnorm(10, 0, 20)
+y <- 0.5 + 2 * x + e
+?sample
+my.matches <- as.data.frame(matrix(0, nrow(a), ncol(a) - 1))#
+for (i in 2:100) {#
+  my.matches[,i] <- count.matches(i)#
+}
+count.matches <- function(x) {#
+  ifelse(!is.na(a[,x] & a[,2]),1,0)#
+}
+my.matches <- as.data.frame(matrix(0, nrow(a), ncol(a) - 1))#
+for (i in 2:100) {#
+  my.matches[,i] <- count.matches(i)#
+}
+count.matches(4)
+count.matches <- function(x) {#
+  ifelse(!is.na(a[,x] & a[,2]),1,0)#
+}
+count.matches(4)
+output <- mtcars[NULL,]#
+for (i in seq_len(nrow(mtcars))) { #
+  if (i  <= 30) {#
+        next#
+  }#
+  # ...#
+  output <- rbind(output, mtcars[i, ]) #
+}
+output
+y  <- NULL;#
+for (i in 1:2)#
+ { #
+  tmp <- 1+i#
+  y <- rbind(y, tmp)#
+ }
+y
+y  <- NULL;#
+for (i in 1:2)#
+ { #
+  tmp <- 1+i#
+  temp<-10+i#
+  y <- rbind(y, tmp, temp)#
+ }
+y
+?switch
+?do.cal
+??do.cal
+data(iris)
+str(iris)
+names(iris)
+data1<-iris[,5]
+names(data1)
+data1
+library(XML)#
+url<- "https://scholar.google.com/citations?user=HI-I6C0AAAAJ&hl=en"#
+html<-htmlTreeParse(url, useInternalNodes = T)#
+xpathSApply(html, "//title", xmlValue)
+url<-"https://api.github.com/users/jtleek/repos"#
+library(httr); html2=GET(url)#
+#extract the content as text#
+content2=content(html2,as="text")#
+#Parse the content#
+parsedHtml=htmlParse(content2,asText=TRUE)#
+xpathSApply(parsedHtml, "//date", xmlValue)
+library(httr)
+library(jsonlite)
+oauth_endpoints("github")
+myapp <- oauth_app("github",#
+#
+  key = "5ac87a26bd0cda93923c",#
+#
+  secret = "50aa65760f4cf64c3d3f5d314769b0b5b4649b79")
+github_token <- oauth2.0_token(oauth_endpoints("github"), myapp)
+gtoken <- config(token = github_token)#
+#
+req <- GET("https://api.github.com/users/jtleek/repos", gtoken)#
+#
+stop_for_status(req)#
+#
+content(req)
+json1 = content(req)#
+json2=jsonlite::fromJSON(toJSON(json1))
+class(json2)
+names(json2)
+json2[1,1:4]
+json2[1,5:10]
+str(json2)
+my_data = subset(json2, gender == "https://api.github.com/repos/jtleek/datasharing/releases{/id}")
+my_data = subset(json2, labels_url == "https://api.github.com/repos/jtleek/datasharing/releases{/id}")
+my_data
+my_data[,47]
+my_data = subset(json2, created_at == "2014-03-05T16:11:46Z")
+my_data
